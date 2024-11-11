@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Schedule</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #003366;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+        }
+
+        .header {
+            background-color: #002244;
+            color: #ffffff;
+            padding: 8px;
+            text-align: center;
+            font-family: 'Tangerine', cursive;
+            font-size: 5em;
+            font-style: italic;
+            letter-spacing: 3px;
+        }
+
+        .schedule-container {
+            background-color: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            width: 95%;
+            max-width: 1200px;
+            padding: 40px;
+            margin: 40px auto;
+        }
+
+        h1 {
+            font-weight: 700;
+            color: #cc0000;
+            text-align: center;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: #f0f8ff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 300px;
+            padding: 20px;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            font-weight: 700;
+            color: #002244;
+            margin-bottom: 10px;
+        }
+
+        .card-info {
+            font-size: 0.9em;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .card-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #cc0000;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .card-button:hover {
+            background-color: #990000;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 1em;
+            color: #ffffff;
+            text-align: center;
+            background-color: #002244;
+            padding: 20px;
+            border-radius: 0 0 15px 15px;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                width: 100%;
+                max-width: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        Mediteran Express
+    </div>
+    <div class="schedule-container">
+        <h1>Bus Schedule</h1>
+        <div class="card-container">
+            <div class="card">
+                <h2 class="card-title">Budva - Sveti Stefan - Budva</h2>
+                <p class="card-info">Stops: Budva, Becici, Rafailovici, Sveti Stefan, return</p>
+                <a href="budva-sveti-stefan-budva.html" class="card-button">More details</a>
+            </div>
+            <div class="card">
+                <h2 class="card-title">Budva - Petrovac - Budva</h2>
+                <p class="card-info">Stops: Budva, Przno, Petrovac, return</p>
+                <a href="budva-petrovac-budva.html" class="card-button">More details</a>
+            </div>
+            <div class="card">
+                <h2 class="card-title">Budva - Lastva - Budva</h2>
+                <p class="card-info">Stops: Budva, Lastva, return</p>
+                <a href="budva-lastva-budva.html" class="card-button">More details</a>
+            </div>
+        </div>
+        <div class="footer">
+            Contact us for more information about the schedule and routes.
+        </div>
+    </div>
+</body>
+</html>
