@@ -3,5 +3,5 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('schedule/', include('schedule.urls')),  # Подключаем маршруты приложения schedule
+    path('', include('schedule.urls')),  # Устанавливаем /schedule как домашнюю страницу
 ]
